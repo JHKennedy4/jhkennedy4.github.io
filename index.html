@@ -10,6 +10,10 @@
       html {
         width: 100%;
         height: 100%;
+        max-width: 100%;
+        background: url(coming-soon.png) center center no-repeat;
+        background-size: 80% auto;
+        font-family: Georgia, Serif;
       }
 
       body {
@@ -17,53 +21,29 @@
       }
 
       .container {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
+        width:  100%;
         height: 100vh;
+        position: relative;
+      }
+
+      .email {
+        text-align: center;
         width: 100%;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-      }
-
-      .image-holder {
-        -webkit-box-flex: 1;
-        -webkit-flex: 1 60%;
-        -ms-flex: 1 60%;
-        flex: 1 60%;
-      }
-
-      .image {
+        position: absolute;
+        bottom: 5%;
         margin: 0 auto;
       }
 
-      .content {
-        -webkit-box-flex: 1;
-        -webkit-flex: 1 40%;
-        -ms-flex: 1 40%;
-        flex: 1 40%;
+
+      .address {
+        text-decoration: underline;
       }
+
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="image-holder">
-        <img class="image" src="coming-soon.png" alt="Coming Soon" />
-      </div>
-      <div class="content">
-        <div class="email">Contact debra<span style="display: none;">suck it spammers</span>@vote.org for more info</div>
-      </div>
+      <div class="email">Contact <span class="address">debra<span style="display: none;">suck it spammers</span>@vote.org</span> for more information.</div>
     </div>
   </body>
 </html>
