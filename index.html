@@ -1,16 +1,69 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <meta name="description" content="The future home of Long Distance Voter" />
     <title>Vote.org</title>
     <style>
       html {
         width: 100%;
         height: 100%;
-        background: url(coming-soon.png) center center no-repeat;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .container {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+
+      .image-holder {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 60%;
+        -ms-flex: 1 60%;
+        flex: 1 60%;
+      }
+
+      .image {
+        margin: 0 auto;
+      }
+
+      .content {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 40%;
+        -ms-flex: 1 40%;
+        flex: 1 40%;
       }
     </style>
   </head>
   <body>
+    <div class="container">
+      <div class="image-holder">
+        <img class="image" src="coming-soon.png" alt="Coming Soon" />
+      </div>
+      <div class="content">
+        <div class="email">Contact debra<span style="display: none;">suck it spammers</span>@vote.org for more info</div>
+      </div>
+    </div>
   </body>
 </html>
