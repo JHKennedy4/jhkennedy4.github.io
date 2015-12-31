@@ -15,6 +15,7 @@
     <meta property="og:site_name" content="Vote.org" />
 
     <title>Vote.org</title>
+
     <style>
       html {
         width: 100%;
@@ -41,18 +42,28 @@
         position: absolute;
         bottom: 5%;
         margin: 0 auto;
+        padding: 0 5%;
+        max-width: 90%;
       }
-
 
       .address {
         text-decoration: underline;
+      }
+
+      @media only screen (min-width: 850px) {
+        .donate {
+          margin-left: 15px;
+        }
       }
 
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="email">Contact <span class="address">debra<span style="display: none;">suck it spammers</span>@vote.org</span> for more information.</div>
+      <div class="email">
+        Contact <span class="address">debra<span style="display: none;">suck it spammers</span>@vote.org</span> for more information.
+        <a class="donate" href="https://www.generosity.com/community-fundraising/a-not-so-sexy-but-oh-so-vital-project">Help us build Vote.org by making a small donation instantly.</a>
+      </div>
     </div>
   </body>
 </html>
