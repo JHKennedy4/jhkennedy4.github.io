@@ -152,20 +152,25 @@
 
     @media print {
       body {
-        padding: 24px 16px;
+        padding: 16px 16px;
         max-width: none;
       }
-      header h1 { font-size: 24px; }
-      section { margin-bottom: 20px; }
-      .role { margin-bottom: 18px; }
-      .role li { font-size: 12px; margin-bottom: 4px; }
-      .role .context { font-size: 12px; }
-      .role .company { font-size: 12px; }
+      header { margin-bottom: 16px; padding-bottom: 8px; }
+      header h1 { font-size: 22px; }
+      section { margin-bottom: 12px; break-inside: avoid-column; }
+      section > h2 { font-size: 11px; margin-bottom: 6px; }
+      .role { margin-bottom: 12px; break-inside: avoid; }
+      .role-header { break-after: avoid; }
+      .role .company { font-size: 12px; break-after: avoid; }
+      .role .context { font-size: 12px; break-after: avoid; }
+      .role li { font-size: 11px; margin-bottom: 2px; break-inside: avoid; }
+      .role ul { orphans: 2; widows: 2; }
       .role-header h3 { font-size: 14px; }
-      .summary { font-size: 13px; }
-      .skills { font-size: 12px; }
-      header .subtitle { font-size: 14px; }
-      section > h2 { font-size: 12px; margin-bottom: 10px; }
+      .summary { font-size: 11px; line-height: 1.4; }
+      .skills { font-size: 11px; }
+      header .subtitle { font-size: 13px; }
+      header .contact { font-size: 11px; }
+      .education-entry { break-inside: avoid; }
     }
 
     @media (max-width: 600px) {
