@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Kennedy - Resume</title>
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --muted: #555;
+      --border: #ddd;
+      --bg: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.5;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    header {
+      margin-bottom: 32px;
+      border-bottom: 2px solid var(--text);
+      padding-bottom: 16px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    header .subtitle {
+      font-size: 16px;
+      color: var(--muted);
+      font-style: italic;
+      margin-bottom: 8px;
+    }
+
+    header .contact {
+      font-size: 13px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      color: var(--muted);
+    }
+
+    header .contact a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    header .contact a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 28px;
+    }
+
+    section > h2 {
+      font-size: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--muted);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 4px;
+      margin-bottom: 16px;
+    }
+
+    .summary {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .role {
+      margin-bottom: 24px;
+    }
+
+    .role-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin-bottom: 2px;
+    }
+
+    .role-header h3 {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .role-header .dates {
+      font-size: 13px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .role .company {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .role ul {
+      padding-left: 20px;
+      font-size: 14px;
+    }
+
+    .role li {
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+
+    .role .context {
+      font-size: 14px;
+      font-style: italic;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .education-entry {
+      margin-bottom: 12px;
+    }
+
+    .education-entry h3 {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .education-entry .details {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .skills {
+      font-size: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    @media print {
+      body {
+        padding: 24px 16px;
+        max-width: none;
+      }
+      header h1 { font-size: 24px; }
+      section { margin-bottom: 20px; }
+      .role { margin-bottom: 18px; }
+      .role li { font-size: 12px; margin-bottom: 4px; }
+      .role .context { font-size: 12px; }
+      .role .company { font-size: 12px; }
+      .role-header h3 { font-size: 14px; }
+      .summary { font-size: 13px; }
+      .skills { font-size: 12px; }
+      header .subtitle { font-size: 14px; }
+      section > h2 { font-size: 12px; margin-bottom: 10px; }
+    }
+
+    @media (max-width: 600px) {
+      .role-header {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>John Kennedy</h1>
+  <div class="subtitle">Applied AI Engineering Lead</div>
+  <div class="contact">
+    South Lake Tahoe, CA &middot; 585-490-5608 &middot;
+    <a href="https://www.linkedin.com/in/jhkennedy4">linkedin.com/in/jhkennedy4</a>
+  </div>
+</header>
+
+<section>
+  <h2>Summary</h2>
+  <div class="summary">
+    I've spent the last three years on applied AI engineering at Square, building the prototypes, tooling, and architecture for AI-driven website editing. Before that, five years on payments infrastructure: SDK design, checkout reliability, and conversion optimization. Every major project I've led started the same way: I saw the direction before the org did, built a working prototype to prove it, and used that to pull resources and alignment together.
+  </div>
+</section>
+
+<section>
+  <h2>Experience</h2>
+
+  <div class="role">
+    <div class="role-header">
+      <h3>Technical Lead, Applied AI</h3>
+      <span class="dates">2023 - 2026</span>
+    </div>
+    <div class="company">Square (Block, Inc.)</div>
+    <div class="context">Recruited to lead AI website editing. Prototyped, built, and led the team behind what became a code-red priority initiative.</div>
+    <ul>
+      <li>Started the AI website editor initiative in 2023 with UXR and early prototypes proving that GPT-3 and 3.5 could generate working UI components and perform edits through tool routing. Delivered iterative demos across multiple quarters that built the case for dedicated investment.</li>
+      <li>In early 2025, built a full working prototype of the website editor using AI-assisted development (Cursor, Claude 3.5), structured with design docs, milestones, and defined acceptance criteria. Presented it to senior leadership, which secured resourcing to form a dedicated team.</li>
+      <li>Technical lead on a team of six (PM, designer, 2 ML engineers, infrastructure engineer). Owned engineering roadmap planning and served as primary planning partner for our PM. The architecture uses an LLM-safe JSON data model with static validation, so the LLM edits structured data instead of code and errors are caught before save. Contributed over 60% of the codebase.</li>
+      <li>Managed team dynamics across the group, including coordinating formal feedback with an ML engineer's manager to resolve a recurring interpersonal conflict, and escalating roadmap concerns to keep the project on track.</li>
+      <li>Named AI Champion for Square's web organization. Assessed AI tooling adoption across the org, identified common gaps, and built shared infrastructure to address them.</li>
+      <li>Created Square's shared TypeScript MCP service for deploying and testing Model Context Protocol servers. Built the Mosaic MCP for website editing tools and a TypeDoc MCP that surfaced component type information. The shared service was adopted by Square AI for their Cube MCP (data warehouse access) and a Google Maps integration.</li>
+      <li>Started the Generative UI Working Group at Block, connecting teams from Goose, Square Web, and internal AI tooling. The group's work led to Mosaic being adopted as a shared rendering engine by multiple teams building LLM-driven interfaces.</li>
+      <li>The project was elevated to a code-red priority in early 2026 and is the basis for Square's upcoming website editing product.</li>
+    </ul>
+  </div>
+
+  <div class="role">
+    <div class="role-header">
+      <h3>Technical Lead, Checkout SDK</h3>
+      <span class="dates">2022 - 2023</span>
+    </div>
+    <div class="company">Square (Block, Inc.)</div>
+    <div class="context">Tech lead on the SDK team, focused on checkout conversion reliability.</div>
+    <ul>
+      <li>Defined workstreams for frontend and backend instrumentation to find where checkout was failing.</li>
+      <li>Ran a systematic bug-fixing effort where we quantified the GPV impact of each issue to prioritize fixes. Checkout conversion improved from the low 80s to the high 90s (percentage points).</li>
+      <li>Mentored a mid-level engineer through the reliability work and wrote their promotion packet based on the impact they delivered. They were promoted.</li>
+      <li>Led three engineers as DRI on a Square Pay redesign (later deprioritized).</li>
+      <li>Conducted over 100 engineering interviews per year during Square's growth period. Authored a frontend screening question that became a standard part of the loop.</li>
+    </ul>
+  </div>
+
+  <div class="role">
+    <div class="role-header">
+      <h3>Senior Software Engineer, Web Payments</h3>
+      <span class="dates">2019 - 2022</span>
+    </div>
+    <div class="company">Square (Block, Inc.)</div>
+    <div class="context">Worked on the public-facing Square Web Payments SDK, used by merchants to accept payments on their sites.</div>
+    <ul>
+      <li>Responsible for the public API design of the new Web Payments SDK (the replacement for SqPaymentForm). Worked with internal teams and developers already using the old SDK to get the interface right.</li>
+      <li>Implemented ACH bank payments through a Plaid integration and migrated Google Pay to the new SDK.</li>
+      <li>Led Payments UI, a project I proposed: a pre-built micro-checkout that wrapped the SDK so developers could support every payment method from a single init call and get new methods automatically.</li>
+      <li>Recruited by a skip-level leader to join a team going through a transition and provide candid feedback on team health and process.</li>
+    </ul>
+  </div>
+
+  <div class="role">
+    <div class="role-header">
+      <h3>Software Engineer, Invoices</h3>
+      <span class="dates">2017 - 2019</span>
+    </div>
+    <div class="company">Square (Block, Inc.)</div>
+    <ul>
+      <li>Rebuilt the invoices payment page from a static, server-rendered JRuby page into an Ember app, giving the team a real frontend framework to build on.</li>
+      <li>Worked with the Square Developer team to integrate SqPaymentForm for PCI-compliant card payments. Added Apple Pay and Google Pay to the invoices flow.</li>
+      <li>Promoted from L4 to L5.</li>
+    </ul>
+  </div>
+
+  <div class="role">
+    <div class="role-header">
+      <h3>Web Engineer</h3>
+      <span class="dates">2015 - 2017</span>
+    </div>
+    <div class="company">Fitbit</div>
+    <ul>
+      <li>Worked with designers to build a living style guide and refactored the frontend to use it, which cut turnaround time on new feature work significantly.</li>
+      <li>Optimized the build toolchain for 50% faster builds.</li>
+      <li>Built a customizable onboarding system and the FitStar music player with design and product.</li>
+    </ul>
+  </div>
+
+  <div class="role">
+    <div class="role-header">
+      <h3>Software Engineer</h3>
+      <span class="dates">2013 - 2015</span>
+    </div>
+    <div class="company">Brand Networks</div>
+    <ul>
+      <li>Full-stack engineer on a client-facing team building social media advertising tools for enterprise clients including American Express. Progressed from front-end engineer to software engineer.</li>
+    </ul>
+  </div>
+
+  <div class="role">
+    <div class="role-header">
+      <h3>Volunteer Software Engineer</h3>
+      <span class="dates">2015 - 2016</span>
+    </div>
+    <div class="company">Vote.org (YC-backed nonprofit)</div>
+    <ul>
+      <li>Migrated applications to Heroku, set up staging environments, and streamlined deployments. Recruited and managed engineering volunteers, wrote job descriptions, and helped hire their first Director of Engineering.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="education-entry">
+    <h3>Rochester Institute of Technology</h3>
+    <div class="details">Information Technology and Computer Engineering, 2008 - 2013</div>
+    <div class="details">Founder and President, Electric Vehicle Team</div>
+  </div>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    TypeScript, React, Ember, GraphQL, Node.js / Applied AI, prompt engineering, MCP server design, LLM tool architecture, generative UI / Payments infrastructure, PCI compliance, SDK and API design / Reliability engineering, instrumentation, conversion optimization / Technical leadership, cross-functional team leadership, engineering hiring
+  </div>
+</section>
+
+</body>
+</html>
